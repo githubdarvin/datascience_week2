@@ -1,0 +1,23 @@
+---
+title: "My_first_map- Date: 06/19/2018"
+output: ioslides_presentation
+Author: Saialja M
+Date: "06/19/2018"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Slide with R Output
+
+```{r cars, echo = FALSE}
+library(leaflet)
+myfirst_map<-leaflet()%>% addTiles
+myfirst_map<-myfirst_map%>%
+addMarkers(lat=17.3850,lng=78.4867, popup = "My home town")
+myfirst_map
+```
+
+
